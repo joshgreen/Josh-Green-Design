@@ -35,8 +35,12 @@ xmlrpc.php
 /readme.html
 /sitemap.xml
 /sitemap.xml.gz
-.DS_Store
+**/.DS_Store
 wp-content/themes/twentynineteen
 wp-content/themes/twentytwenty
 wp-content/themes/twentytwentyone
 wp-content/*/!pascal
+node_modules
+gulpfile.js
+package.json
+package-lock.json
