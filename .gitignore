@@ -40,7 +40,7 @@ wp-content/themes/twentynineteen
 wp-content/themes/twentytwenty
 wp-content/themes/twentytwentyone
 wp-content/*/!pascal
-wp-content/!mu-plugins
+wp-content/**/!mu-plugins
 node_modules
 gulpfile.js
 package.json
