@@ -629,5 +629,15 @@ textarea {
 }
 
 body {
+  display: grid;
   background-color: mistyrose;
+}
+
+.site-header, .site-footer, .site-main, aside {
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) minmax(300px, 1350px) minmax(20px, 1fr);
+}
+
+.inner, .site-info, article, aside section {
+  grid-column: 2;
 }
