@@ -180,23 +180,16 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 //
-
-add_action('init', 'register_custom_styles_scripts');
-
-function register_custom_styles_scripts() {
-    wp_register_style( 'prism_css', '../pascal/css/prism.css' );
-    wp_register_script( 'prism_js', '../pascal/js/prism.js', '', null, true);
+function jgd_adding_styles() {
+wp_register_style('prism_css', get_template_directory_uri() .'/css/prism.css', __FILE__);
+wp_enqueue_style('prism_css');
 }
+add_action( 'wp_enqueue_scripts', 'jgd_adding_styles' );
 
 
-add_action( 'wp_enqueue_scripts', 'conditionally_enqueue_styles_scripts' );
 
-function conditionally_enqueue_styles_scripts() {
-
-    if ( is_page(array('blog', 'home')) ) {
-        wp_enqueue_script( 'prism_js' );
-        wp_enqueue_style( 'prism_css' );
-    }
+function jgd_adding_scripts() {
+wp_register_script('prism_js', get_template_directory_uri() . '/js/prism.js', true);
+wp_enqueue_script('prism_js');
 }
-
-?>
+add_action( 'wp_enqueue_scripts', 'jgd_adding_scripts' );
