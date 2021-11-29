@@ -178,3 +178,25 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+//
+
+add_action('init', 'register_custom_styles_scripts');
+
+function register_custom_styles_scripts() {
+    wp_register_style( 'prism_css', '../pascal/css/prism.css' );
+    wp_register_script( 'prism_js', '../pascal/js/prism.js', '', null, true);
+}
+
+
+add_action( 'wp_enqueue_scripts', 'conditionally_enqueue_styles_scripts' );
+
+function conditionally_enqueue_styles_scripts() {
+
+    if ( is_page(array('blog', 'home')) ) {
+        wp_enqueue_script( 'prism_js' );
+        wp_enqueue_style( 'prism_css' );
+    }
+}
+
+?>
