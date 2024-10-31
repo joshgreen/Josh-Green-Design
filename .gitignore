@@ -54,4 +54,5 @@ wp-content/object-cache.php
 wp-content/languages
 wp-content/themes/jgd_2024/.stylelintrc.json
 wp-content/themes/jgd_2024/.eslintrc
-
+wp-content/languages/
+wp-content/languages/*.*
