@@ -55,3 +55,10 @@ wp-content/themes/jgd_2024/.stylelintrc.json
 wp-content/themes/jgd_2024/.eslintrc
 wp-content/languages/
 languages/
+litespeed.conf
+wp-content/index.php
+wp-content/jetpack-waf/
+wp-content/themes/blank_man/
+wp-content/themes/index.php
+wp-content/themes/joshgreendesign23/
+wp-content/themes/twentytwentytwo/
