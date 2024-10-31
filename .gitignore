@@ -15,7 +15,6 @@ wp-content/Assets
 wp-content/db.php
 wp-content/object-cache.php
 error_log
-index.php
 old-holding.html
 wp-activate.php
 wp-admin/
