@@ -1,5 +1,6 @@
 *.log
 wp-config.php
+wp-config-sample.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
 wp-content/backups/
@@ -38,6 +39,8 @@ xmlrpc.php
 **/.DS_Store
 wp-content/themes/twentynineteen
 wp-content/themes/twentytwenty
+wp-content/themes/twentytwentythree
+wp-content/themes/twentytwentyfour
 wp-content/themes/twentytwentyone
 wp-content/*/!pascal
 **/!mu-plugins
@@ -49,3 +52,6 @@ wp-content/object-cache.php
 wp-content/db.php
 wp-content/object-cache.php
 wp-content/languages
+wp-content/themes/jgd_2024/.stylelintrc.json
+wp-content/themes/jgd_2024/.eslintrc
+
